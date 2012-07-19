@@ -75,6 +75,10 @@ h1.pagehead {
     color: #888; /* grey if it's not a link */
 }
 
+.site a {
+    color: #333; /* dark if it's a link */
+}
+
 .site a:hover {
     color: #000; /* black if hovered */
 }
@@ -93,15 +97,41 @@ h1.pagehead {
     padding: 2em 1em 0.5em;
 }
 
+.credits {
+    background: white;
+    padding: 1.5em 3em 2em;
+    -webkit-box-shadow: inset 0 1em 1.5em -0.5em #000, inset 0 -1em 1.5em -0.5em #000;
+    -moz-box-shadow: inset 0 1em 1.5em -0.5em #000, inset 0 -1em 1.5em -0.5em #000;
+    box-shadow: inset 0 1em 1.5em -0.5em #000, inset 0 -0.8em 1.5em -0.5em #000;
+}
+
+.credits a {
+    margin: 1em 2em;
+    display: inline-block;
+}   
+
+.credits img { border: none; }
+
 </style>
 
-	</head>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16452055-9']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 
-	<body>
+</head>
 
-    <h1 class="pagehead">Spatial Ecology at JCU</h1>
+<body>
 
-    <div class="sites">
+<h1 class="pagehead">Spatial Ecology at JCU</h1>
+
+<div class="sites">
 
     <div class="site">
         <h2><a href="http://wallaceinitiative.org/">Wallace Initiative</a></h1>
@@ -128,34 +158,34 @@ h1.pagehead {
     </div>
 
     <div class="site">
-        <h2>Climate Data</h1>
+        <h2><a href="http://wallaceinitiative.org/climate_2012/">Climate Data</a></h1>
         <h3>Downloadable climate data for many climate models and emission scenarios</h2>
         <div class="content">
-            <em>coming soon</em>
+            <a href="http://wallaceinitiative.org/climate_2012/">wallaceinitiative.org/climate_2012/</a>
         </div>
     </div>
 
-    </div>
-<!--
-		<p>This is a temporary landing page...</p>
+</div>
 
-		<h3>Australia Wet Tropics data hosted by the Centre for Tropical Biodiveristy and Climate Change</h3>
-		<p> <a href="http://spatialecology.jcu.edu.au/AWT/">http://spatialecology.jcu.edu.au/AWT/</a></p>
-		<p>&nbsp;</p>
+<div class="credits">
+    <a href="http://www.jcu.edu.au/ctbcc/">
+        <img src="/images/ctbcc_sm.png" alt="Centre for Tropical Biodiversity and Climate Change">
+    </a>
+    <!-- a href="http://www.tyndall.ac.uk/">
+        <img src="/images/themenews_logo.jpg" alt="Tyndall Centre for Climate Change Research">
+    </a -->
+    <a href="http://www.jcu.edu.au">
+        <img src="/images/jcu_logo_sm.png" alt="JCU Logo">
+    </a>
+    <a href="http://eresearch.jcu.edu.au/">
+        <img src="/images/eresearch.png" alt="eResearch Centre, JCU">
+    </a>
+</div>
 
-		<h3>Australian Bird Data</h3>
-		<p> <a href="http://spatialecology.jcu.edu.au/AustralianBirds/">http://spatialecology.jcu.edu.au/AustralianBirds/</a></p>
-		<p>&nbsp;</p>
-
-		<h3>mysql database access</h3>
-		<p> <a href="http://spatialecology.jcu.edu.au/phpmyadmin/">http://spatialecology.jcu.edu.au/phpmyadmin/</a></p>
-		<p>&nbsp;</p>
-
--->
-	<p class="contact">
-	    please contact Jeremy VanDerWal
-	    (<a href="mailto:jjvanderwal@gmail.com">jjvanderwal@gmail.com</a>)
-	    with any queries.
-	</p>
+<p class="contact">
+    please contact Jeremy VanDerWal
+    (<a href="mailto:jjvanderwal@gmail.com">jjvanderwal@gmail.com</a>)
+    with any queries.
+</p>
 </body>
 </html>
